@@ -6,6 +6,7 @@ export default function LoginScreen({ navigation }) {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [nome, setNome] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleLogin = () => {
     if (!nome || !email || !password || !confirmPassword) {
@@ -17,11 +18,26 @@ export default function LoginScreen({ navigation }) {
       Alert.alert('Erro', 'As senhas não coincidem');
       return;
     }
-    Alert.alert('Sucesso', 'Cadastro bem-sucedido!');
+
+    // Exibe mensagem de sucesso
+    setSuccessMessage('Cadastro realizado com sucesso!');
+    setTimeout(() => setSuccessMessage(''), 5000); // Remove a mensagem após 5 segundos
+
+    // Limpa os campos
+    setNome('');
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
   };
 
   return (
     <View style={styles.container}>
+      {successMessage ? (
+        <View style={styles.successMessageContainer}>
+          <Text style={styles.successMessageText}>{successMessage}</Text>
+        </View>
+      ) : null}
+
       <View style={styles.content}>
         <Text style={styles.title}>Cadastro</Text>
 
@@ -57,7 +73,7 @@ export default function LoginScreen({ navigation }) {
         />
 
         <TouchableOpacity style={styles.button} onPress={handleLogin}>
-          <Text  style={styles.buttonText}>Cadastrar</Text>
+          <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
 
         <TouchableOpacity href="/Screens/Login" style={styles.registerLink}>
@@ -75,6 +91,22 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 16,
     backgroundColor: '#f5f5f5',
+  },
+  successMessageContainer: {
+    position: 'absolute',
+    top: 50,
+    backgroundColor: '#d4edda',
+    padding: 15,
+    borderRadius: 8,
+    width: '90%',
+    alignItems: 'center',
+    borderColor: '#c3e6cb',
+    borderWidth: 1,
+  },
+  successMessageText: {
+    color: '#155724',
+    fontSize: 16,
+    fontWeight: '600',
   },
   content: {
     alignItems: 'center',

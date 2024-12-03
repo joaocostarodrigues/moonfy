@@ -9,10 +9,7 @@ export default function LoginScreen({ navigation }) {
     if (!email || !password) {
       Alert.alert('Erro', 'Por favor, preencha todos os campos');
     } else {
-      // Aqui você pode adicionar a lógica de autenticação (exemplo com alerta)
       Alert.alert('Sucesso', 'Login bem-sucedido!');
-      // Navegação para a tela principal após o login bem-sucedido
-      // navigation.navigate('Home');
     }
   };
 
@@ -37,7 +34,7 @@ export default function LoginScreen({ navigation }) {
           onChangeText={setPassword}
         />
 
-        <TouchableOpacity style={styles.button} onPress={handleLogin}>
+        <TouchableOpacity href="/Screens/Menu" style={styles.button} onPress={handleLogin}>
           <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
 
