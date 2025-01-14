@@ -1,23 +1,25 @@
-# MOONFY (H1)
+# Music App 🎵
 
-## Funcionalidades (H2)
-O aplicativo conta com as seguintes funcionalidades principais:
+Este é um **aplicativo de música** desenvolvido como parte de uma atividade escolar. O projeto foi criado com **React Native**, permitindo a execução em plataformas móveis iOS e Android.
 
-Login e Registro: Permite que o usuário faça login em sua conta ou se registre para criar uma nova.
-Player de Música: O app possui um player de música onde é possível ouvir faixas e controlar a reprodução, como pausar, voltar, avançar e visualizar a lista de músicas.
-Perfil: O usuário pode acessar seu perfil e ver informações básicas, como nome e lista de músicas favoritas.
+## Funcionalidades 📱
 
-## Tecnologia Utulizada(H2)
-React Native: Para o desenvolvimento do app.
-React Navigation: Para gerenciar a navegação entre as telas.
-State Management: Para gerenciar os estados do aplicativo, como autenticação do usuário e controle do player.
-APIs de Música: Para integrar e reproduzir faixas de música (se aplicável).
+- **Login e Registro**: Faça login ou crie uma nova conta.
+- **Player de Música**: Controle a reprodução de músicas, como pausar, avançar ou retroceder.
+- **Perfil**: Acesse e edite suas informações pessoais e favoritas.
 
-## Objetivo (H2)
-Este projeto foi criado como uma atividade para a escola com o objetivo de aplicar conhecimentos adquiridos em programação de aplicativos móveis. A ideia foi desenvolver um aplicativo funcional de música com foco na experiência do usuário e no aprendizado de técnicas e bibliotecas do React Native.
+## Tecnologias Utilizadas 🛠️
 
-## Como Rodar o Projeto (H2)
-Para rodar o projeto na sua máquina local, siga os seguintes passos:
+- **React Native** para o desenvolvimento do aplicativo.
+- **React Navigation** para a navegação entre telas.
+- **State Management** para gerenciar autenticação e controle do player.
+
+## Como Rodar o Projeto 🚀
+
+Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/music-app.git
+
 
 ## *Contribuições* (H2)
 Este projeto foi desenvolvido por mim como parte de uma atividade escolar, e neste momento não está aberto para contribuições externas. No entanto, sugestões de melhorias são sempre bem-vindas!
