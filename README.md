@@ -19,7 +19,14 @@ Este é um **aplicativo de música** desenvolvido como parte de uma atividade es
 Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/music-app.git
-
+```
+Instale as dependências:
+```bash
+npm i
+```
+iniciar:
+```bash
+npx expo start
 ```
 
 ## *Contribuições* (H2)
