@@ -20,6 +20,7 @@ Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/music-app.git
 
+```
 
 ## *Contribuições* (H2)
 Este projeto foi desenvolvido por mim como parte de uma atividade escolar, e neste momento não está aberto para contribuições externas. No entanto, sugestões de melhorias são sempre bem-vindas!
